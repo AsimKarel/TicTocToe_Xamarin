@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="197" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="80" y="344" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_4_TouchUpInside:" destination="BYZ-38-t0r" id="406" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="395" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="162" y="344" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_5_TouchUpInside:" destination="BYZ-38-t0r" id="407" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="4"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="396" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="247" y="344" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_6_TouchUpInside:" destination="BYZ-38-t0r" id="408" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="5"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="397" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="80" y="439" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_7_TouchUpInside:" destination="BYZ-38-t0r" id="409" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="6"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="398" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="162" y="439" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_8_TouchUpInside:" destination="BYZ-38-t0r" id="410" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="7"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="399" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="247" y="439" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_9_TouchUpInside:" destination="BYZ-38-t0r" id="411" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="8"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="400" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="80" y="255" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_1_TouchUpInside:" destination="BYZ-38-t0r" id="403" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="401" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="162" y="255" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_2_TouchUpInside:" destination="BYZ-38-t0r" id="404" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="402" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="247" y="255" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="Btn_3_TouchUpInside:" destination="BYZ-38-t0r" id="405" eventType="touchUpInside"/>
+                                </connections>
+                                <accessibility key="accessibilityConfiguration" identifier="2"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="626" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="line_vertical_2_x3.png">
+                                <rect key="frame" x="143" y="214" width="13" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="627" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="line_vertical_2_x3.png">
+                                <rect key="frame" x="229" y="224" width="13" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="629" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="line_horizontal_1_x2.png">
+                                <rect key="frame" x="28" y="325" width="357" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="630" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="line_horizontal_1_x2.png">
+                                <rect key="frame" x="37" y="417" width="357" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2084" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" hidden="YES">
+                                <rect key="frame" x="120" y="647" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5040" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="143" y="67" width="193" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="btn_4" destination="197" id="name-outlet-197"/>
+                        <outlet property="btn_5" destination="395" id="name-outlet-395"/>
+                        <outlet property="btn_6" destination="396" id="name-outlet-396"/>
+                        <outlet property="btn_1" destination="400" id="name-outlet-400"/>
+                        <outlet property="btn_2" destination="401" id="name-outlet-401"/>
+                        <outlet property="btn_3" destination="402" id="name-outlet-402"/>
+                        <outlet property="btn_7" destination="397" id="name-outlet-397"/>
+                        <outlet property="btn_8" destination="398" id="name-outlet-398"/>
+                        <outlet property="btn_9" destination="399" id="name-outlet-399"/>
+                        <outlet property="winLabel" destination="2084" id="name-outlet-2084"/>
+                        <outlet property="randonlbl" destination="5040" id="name-outlet-5040"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line_horizontal_1_x2.png" width="235" height="9"/>
+        <image name="line_vertical_2_x3.png" width="16" height="338"/>
+    </resources>
+</document>
