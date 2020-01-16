@@ -136,6 +136,11 @@
         <Compile Include="line_.designer.cs">
           <DependentUpon>line_.cs</DependentUpon>
         </Compile>
+        <Compile Include="HomeScreen.cs" />
+        <Compile Include="HomeScreen.designer.cs">
+          <DependentUpon>HomeScreen.cs</DependentUpon>
+        </Compile>
+        <Compile Include="TicTocUserDefaults.cs" />
     </ItemGroup>
     <ItemGroup>
       <BundleResource Include="Resources\app_icon_2x.png" />
