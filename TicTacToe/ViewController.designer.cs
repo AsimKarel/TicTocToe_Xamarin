@@ -52,7 +52,19 @@ namespace TicTacToe
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel randonlbl { get; set; }
+        UIKit.UIButton btn_done { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn_exit { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView result_logo { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView result_view { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -93,6 +105,14 @@ namespace TicTacToe
         [Action ("Btn_9_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void Btn_9_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("Btn_done_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void Btn_done_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("Btn_exit_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void Btn_exit_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
@@ -141,9 +161,24 @@ namespace TicTacToe
                 btn_9 = null;
             }
 
-            if (randonlbl != null) {
-                randonlbl.Dispose ();
-                randonlbl = null;
+            if (btn_done != null) {
+                btn_done.Dispose ();
+                btn_done = null;
+            }
+
+            if (btn_exit != null) {
+                btn_exit.Dispose ();
+                btn_exit = null;
+            }
+
+            if (result_logo != null) {
+                result_logo.Dispose ();
+                result_logo = null;
+            }
+
+            if (result_view != null) {
+                result_view.Dispose ();
+                result_view = null;
             }
 
             if (winLabel != null) {

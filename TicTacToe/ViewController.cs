@@ -97,9 +97,13 @@ namespace TicTacToe
                 values[index] = 'X';
                 if (checkWinCondition() == 1)
                 {
-                    winner = 'X';
-                    winLabel.Hidden = false;
+                    setResultView('X');
                     btn.Enabled = false;
+                    return;
+                }
+                else if (checkWinCondition() == -1)
+                {
+                    setResultView('D');
                     return;
                 }
                 player1 = !player1;
@@ -114,18 +118,17 @@ namespace TicTacToe
                 values[index] = 'Y';
                 if (checkWinCondition() == 1)
                 {
-                    winner = 'Y';
-                    winLabel.Text = "You Lose";
-                    winLabel.Hidden = false;
+                    setResultView('Y');
                     btn.Enabled = false;
+                    return;
+                }
+                else if (checkWinCondition() == -1)
+                {
+                    setResultView('D');
                     return;
                 }
                 player1 = !player1;
                 btn.Enabled = false;
-            }
-            randonlbl.Text = "";
-            foreach (char c in values) {
-                randonlbl.Text = randonlbl.Text + " " + c;
             }
         }
 
@@ -163,7 +166,7 @@ namespace TicTacToe
             }
 
             //For Third Row
-            else if (values[5] == values[6] && values[6] == values[7])
+            else if (values[6] == values[7] && values[7] == values[8])
             {
                 return 1;
             }
@@ -206,5 +209,50 @@ namespace TicTacToe
             return 0;
         }
 
+        void setResultView(char result)
+        {
+            result_view.Hidden = false;
+            switch (result)
+            {
+                case 'X':
+                    winner = 'X';
+                    winLabel.Text = "You Win";
+                    result_logo.Image = new UIImage("face_happy_x3");
+                    break;
+                case 'Y':
+                    winner = 'Y';
+                    winLabel.Text = "You Lose";
+                    result_logo.Image = new UIImage("face_sad_x3");
+                    break;
+                case 'D':
+                    winner = 'D';
+                    winLabel.Text = "That's a draw!";
+                    result_logo.Image = new UIImage("face_indifferent_x3");
+                    break;
+            }
+        }
+
+        partial void Btn_done_TouchUpInside(UIButton sender)
+        {
+            foreach (UIView view in this.View.Subviews)
+            {
+                if (view is UIButton)
+                {
+                    ((UIButton)view).Enabled = true;
+                    winner = null;
+                    player1 = true;
+                    result_view.Hidden = true;
+                    for (int i = 0; i < 9; i++)
+                    {
+                        values[i] = i.ToString().ToCharArray()[0];
+                    }
+                }
+            }
+        }
+
+        partial void Btn_exit_TouchUpInside(UIButton sender)
+        {
+            
+        }
     }
 }
