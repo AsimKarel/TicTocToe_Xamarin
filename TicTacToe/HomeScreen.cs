@@ -33,6 +33,7 @@ namespace TicTacToe
         {
             var (score, match) = TicTocUserDefaults.getSharedInstance().getCounts();
             lbl_score.Text = "Score: " + score + "/" + match;
+            progressView.SetProgress((float)score / (float)match, true);
         }
 
         public override void DidReceiveMemoryWarning()

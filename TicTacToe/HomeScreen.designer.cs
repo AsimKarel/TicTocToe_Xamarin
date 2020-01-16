@@ -20,11 +20,7 @@ namespace TicTacToe
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView percentView { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView pervcent_parent { get; set; }
+        UIKit.UIProgressView progressView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -33,14 +29,9 @@ namespace TicTacToe
                 lbl_score = null;
             }
 
-            if (percentView != null) {
-                percentView.Dispose ();
-                percentView = null;
-            }
-
-            if (pervcent_parent != null) {
-                pervcent_parent.Dispose ();
-                pervcent_parent = null;
+            if (progressView != null) {
+                progressView.Dispose ();
+                progressView = null;
             }
         }
     }

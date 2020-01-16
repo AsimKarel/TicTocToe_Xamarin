@@ -210,25 +210,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" id="20512" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" hidden="YES">
-                                <rect key="frame" x="32" y="500" width="350" height="29"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="28304" fixedFrame="YES">
+                                <rect key="frame" x="116" y="475" width="195" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" colorSpace="calibratedRGB" red="0" green="0.47843137254902" blue="1" alpha="1"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="20513" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                        <rect key="frame" x="0.0" y="1" width="240" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor" colorSpace="custom" customColorSpace="sRGB" red="0.686274509803922" green="0.32156862745098" blue="0.870588235294118" alpha="1"/>
-                                    </view>
-                                </subviews>
-                            </view>
+                                <color key="progressTintColor" colorSpace="custom" customColorSpace="sRGB" red="0.93645566701889" green="0.405192404985428" blue="0.667395770549774" alpha="1"/>
+                                <color key="trackTintColor" colorSpace="custom" customColorSpace="sRGB" red="0.403478682041168" green="0.558351814746857" blue="0.936677396297455" alpha="1"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="1"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <connections>
                         <outlet property="lbl_score" destination="17887" id="name-outlet-17887"/>
-                        <outlet property="percentView" destination="20513" id="name-outlet-20513"/>
-                        <outlet property="pervcent_parent" destination="20512" id="name-outlet-20512"/>
+                        <outlet property="progressView" destination="28304" id="name-outlet-28304"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13961" userLabel="First Responder" sceneMemberID="firstResponder"/>
