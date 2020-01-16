@@ -18,7 +18,7 @@ namespace TicTacToe
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            AIMove();
+            //AIMove();
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
