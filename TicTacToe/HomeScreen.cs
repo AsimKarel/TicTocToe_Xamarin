@@ -21,18 +21,18 @@ namespace TicTacToe
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-            var (score, match) = TicTocUserDefaults.getSharedInstance().getCounts();
-            lbl_score.Text = "Score: " + score + "/" + match;
-            var width = ((double)score / match) * percentView.Frame.Width;
-            //percentView.Frame = new CoreGraphics.CGRect(pervcent_parent.Frame.X, pervcent_parent.Frame.Y, width, pervcent_parent.Frame.Height);
+            updateScoreLabel();
         }
 
         public void showScore(NSNotification notification)
         {
+            updateScoreLabel();
+        }
+
+        void updateScoreLabel()
+        {
             var (score, match) = TicTocUserDefaults.getSharedInstance().getCounts();
             lbl_score.Text = "Score: " + score + "/" + match;
-            var width = ((double)score / match) * percentView.Frame.Width;
-            //percentView.Frame = new CoreGraphics.CGRect(pervcent_parent.Frame.X, pervcent_parent.Frame.Y, width, pervcent_parent.Frame.Height);
         }
 
         public override void DidReceiveMemoryWarning()

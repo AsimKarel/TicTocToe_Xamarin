@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using System;
+using System.Threading.Tasks;
 using UIKit;
 
 namespace TicTacToe
@@ -7,6 +8,7 @@ namespace TicTacToe
     public partial class ViewController : UIViewController
     {
         private bool player1 = true;
+        private bool isStarterHuman = true;
         char[] values = { '0', '1', '2', '3', '4', '5', '6', '7', '8'};
         char? winner = null;
         UIColor wincolor = UIColor.FromRGB(0.93f,0.86f,0.24f);
@@ -27,6 +29,7 @@ namespace TicTacToe
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
+
 
         partial void Btn_1_TouchUpInside(UIButton sender)
         {
@@ -73,7 +76,7 @@ namespace TicTacToe
             updateButton(sender);
         }
 
-        private void updateButton(UIButton btn)
+        private async void updateButton(UIButton btn)
         {
             if (winner != null)
             {
@@ -86,7 +89,9 @@ namespace TicTacToe
             if (player1)
             {
                 btn.SetBackgroundImage(new UIImage("x_1.png"), UIControlState.Disabled);
+                btn.Enabled = false;
                 values[index] = 'X';
+                player1 = !player1;
                 if (checkWinCondition() == 1)
                 {
                     setResultView('X');
@@ -98,16 +103,17 @@ namespace TicTacToe
                     setResultView('D');
                     return;
                 }
-                player1 = !player1;
-                btn.Enabled = false;
 
                 //if singleplayer
                 AIMove();
             }
             else
             {
+                await Task.Delay(500);
                 btn.SetBackgroundImage(new UIImage("o_1.png"), UIControlState.Disabled);
                 values[index] = 'Y';
+                player1 = !player1;
+                btn.Enabled = false;
                 if (checkWinCondition() == 1)
                 {
                     setResultView('Y');
@@ -119,8 +125,6 @@ namespace TicTacToe
                     setResultView('D');
                     return;
                 }
-                player1 = !player1;
-                btn.Enabled = false;
             }
         }
 
@@ -248,6 +252,7 @@ namespace TicTacToe
                     result_logo.Image = new UIImage("face_indifferent_x3");
                     break;
             }
+
             NSNotificationCenter.DefaultCenter.PostNotificationName("ScoreUpdated", this);
 
         }
@@ -260,7 +265,6 @@ namespace TicTacToe
                 {
                     ((UIButton)view).Enabled = true;
                     winner = null;
-                    player1 = true;
                     result_view.Hidden = true;
                     view.BackgroundColor = null;
                     for (int i = 0; i < 9; i++)
@@ -268,6 +272,22 @@ namespace TicTacToe
                         values[i] = i.ToString().ToCharArray()[0];
                     }
                 }
+            }
+            toggleChance();
+            
+        }
+
+        public void toggleChance()
+        {
+            isStarterHuman = !isStarterHuman;
+            if (isStarterHuman)
+            {
+                player1 = true;
+            }
+            else
+            {
+                player1 = false;
+                AIMove();
             }
         }
 
